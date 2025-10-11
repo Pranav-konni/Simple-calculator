@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="mini.js" defer></script>
+</head>
+<body>
+    <div class="main-body">
+    <div class="calculator">
+        <div class="output">
+            <input type="text" id="input" disabled>
+        </div>
+        <button onclick="clearDisplay()" id="btn">C</button>
+        <!-- buttons -->
+        <div class="buttons">
+            <div class="row">
+                <button id="btn" onclick="btnClick(7)">7</button>
+                <button id="btn"  onclick="btnClick(8)">8</button>
+                <button id="btn"  onclick="btnClick(9)">9</button>
+                <button id="btn"  onclick="btnClick('/')">/</button>
+
+            </div>
+            <div class="row">
+                <button id="btn" onclick="btnClick(4)">4</button>
+                <button id="btn"  onclick="btnClick(5)">5</button>
+                <button id="btn"  onclick="btnClick(6)">6</button>
+                <button id="btn"  onclick="btnClick('-')">-</button>
+
+            </div>
+            <div class="row">
+                <button id="btn" onclick="btnClick(1)">1</button>
+                <button id="btn"  onclick="btnClick(2)">2</button>
+                <button id="btn"  onclick="btnClick(3)">3</button>
+                <button id="btn"  onclick="btnClick('+')">+</button>
+
+            </div>
+            <div class="row">
+                <button id="btn" onclick="btnClick(0)">0</button>
+                <button id="btn"  onclick="btnClick('*')">x</button>
+                <button id="btn"  onclick="btnClick('.')">.</button>
+                <button id="btn"  onclick="equalClick()">=</button>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
